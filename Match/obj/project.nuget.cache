@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4ykDFb1lpRKkApmm8titXeKj6AHiQVDyuoz85BUVjTuzMnMzadrbubk6I30PrY5YAkBg8P4oHdYB8sxKt/z1gg==",
+  "dgSpecHash": "Bygx8MG8jzrpxvZC+qDkHLvLxgyEmhjg705NTEEAFTxg+AXvZAVpsOusZ3m354GMwiHRexGj/yh0GMzeENbNfQ==",
   "success": true,
   "projectFilePath": "/Users/danishyasin/Developer/repos/PokerMatch/Match/Match.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/danishyasin/.nuget/packages/mstest.testframework/3.0.2/mstest.testframework.3.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
