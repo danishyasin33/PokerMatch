@@ -1,0 +1,12 @@
+/Users/danishyasin/Developer/repos/PokerMatch/PokerClass/bin/Debug/net7.0/PokerClass.deps.json
+/Users/danishyasin/Developer/repos/PokerMatch/PokerClass/bin/Debug/net7.0/PokerClass.dll
+/Users/danishyasin/Developer/repos/PokerMatch/PokerClass/bin/Debug/net7.0/PokerClass.pdb
+/Users/danishyasin/Developer/repos/PokerMatch/PokerClass/obj/Debug/net7.0/PokerClass.csproj.AssemblyReference.cache
+/Users/danishyasin/Developer/repos/PokerMatch/PokerClass/obj/Debug/net7.0/PokerClass.GeneratedMSBuildEditorConfig.editorconfig
+/Users/danishyasin/Developer/repos/PokerMatch/PokerClass/obj/Debug/net7.0/PokerClass.AssemblyInfoInputs.cache
+/Users/danishyasin/Developer/repos/PokerMatch/PokerClass/obj/Debug/net7.0/PokerClass.AssemblyInfo.cs
+/Users/danishyasin/Developer/repos/PokerMatch/PokerClass/obj/Debug/net7.0/PokerClass.csproj.CoreCompileInputs.cache
+/Users/danishyasin/Developer/repos/PokerMatch/PokerClass/obj/Debug/net7.0/PokerClass.dll
+/Users/danishyasin/Developer/repos/PokerMatch/PokerClass/obj/Debug/net7.0/refint/PokerClass.dll
+/Users/danishyasin/Developer/repos/PokerMatch/PokerClass/obj/Debug/net7.0/PokerClass.pdb
+/Users/danishyasin/Developer/repos/PokerMatch/PokerClass/obj/Debug/net7.0/ref/PokerClass.dll
