@@ -134,4 +134,21 @@ public class PokerTestFirst
         Assert.AreEqual("Black", result.winner, "Black wins");
         Assert.AreEqual("Two pairs Greater than White", result.reason, "Black wins");
     }
+    [TestMethod]
+    public void TestTie(){
+        string whiteHand = "2H 4S 4C 3D 2H";
+        string blackHand = "2S 4S 4C 3D 2H";
+
+        bool isValidHand = PokerClass.ValidHand(blackHand);
+        Assert.IsTrue(isValidHand, "Black's hand is valid");
+        isValidHand = PokerClass.ValidHand(whiteHand);
+        Assert.IsTrue(isValidHand, "White's hand is valid");
+
+        if(!isValidHand)
+            return;
+
+        var result = PokerClass.GetHandRanks(blackHand, whiteHand);
+        Assert.AreEqual("None", result.winner, "Tie");
+        Assert.AreEqual("Tie", result.reason, "Tie");
+    }
 }

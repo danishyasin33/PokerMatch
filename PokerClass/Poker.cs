@@ -34,7 +34,12 @@ public static class PokerClass
         if (blackRank.rank == FLUSH && whiteRank.rank == FLUSH)
         {
             // compare the highest card
-            GetHighestCard(blackHand, whiteHand, FLUSH);
+            string winner = GetHighestCard(blackHand, whiteHand, FLUSH);
+            if(winner == "Tie"){
+                return (winner: "None", reason: "Flush with Tie");
+            }else{
+                return (winner: winner, reason: "Flush with highest card");
+            }
             
         }else if (blackRank.rank == FLUSH)
         {
@@ -93,14 +98,15 @@ public static class PokerClass
 
             if (blackRank.pairs[0] < whiteRank.pairs[0])
                 return (winner: "White", reason: "Three of a Kind Greater than Black");
-
         }
-
+        
         // compare the highest card
-        // GetHighestCard(blackHand, whiteHand);
-
-
-        return (winner: "Tie", reason: "Tie");
+        string winnerEnd = GetHighestCard(blackHand, whiteHand);
+        if(winnerEnd == "Tie"){
+            return (winner: "None", reason: "Tie");
+        }else{
+            return (winner: winnerEnd, reason: "Highest card");
+        }   
     }
 
     // Ranking
@@ -175,7 +181,7 @@ public static class PokerClass
         if (pairsCount == 2)
             return (TWO_PAIR, "", pairsOf, 3);
 
-        return ("", "", null, 1);
+        return ("Undefined", "", null, 1);
     }
 
     private static string GetHighestCard(string[] blackHand, string[] whiteHand, string rank = "")
@@ -230,6 +236,7 @@ public static class PokerClass
         // compare the highest card
         if (blackHighestCardInt > whiteHighestCardInt)
             return "Black";
-        else return "White";
+        else if(whiteHighestCardInt > blackHighestCardInt) return "White";
+        else return "Tie";
     }
 }
