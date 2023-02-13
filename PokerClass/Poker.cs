@@ -99,7 +99,7 @@ public static class PokerClass
             if (blackRank.pairs[0] < whiteRank.pairs[0])
                 return (winner: "White", reason: "Three of a Kind Greater than Black");
         }
-        
+
         // compare the highest card
         string winnerEnd = GetHighestCard(blackHand, whiteHand);
         if(winnerEnd == "Tie"){
@@ -185,53 +185,48 @@ public static class PokerClass
     }
 
     private static string GetHighestCard(string[] blackHand, string[] whiteHand, string rank = "")
-    {   string blackHighestCard;
+    {   
         // get the highest card
         string blackHighestCardStr = blackHand[0][0].ToString();
         int blackHighestCardInt = 0;
         foreach (string card in blackHand)
         {
             if(blackHighestCardStr == "A") blackHighestCardInt = 14;
-            if(blackHighestCardStr == "K") blackHighestCardInt = 13;
-            if(blackHighestCardStr == "Q") blackHighestCardInt = 12;
-            if(blackHighestCardStr == "J") blackHighestCardInt = 11;
-
-            blackHighestCardInt = Int32.Parse(blackHighestCardStr);
+            else if(blackHighestCardStr == "K") blackHighestCardInt = 13;
+            else if(blackHighestCardStr == "Q") blackHighestCardInt = 12;
+            else if(blackHighestCardStr == "J") blackHighestCardInt = 11;
+            else blackHighestCardInt = Int32.Parse(blackHighestCardStr);
             
             int cardValueInt = 0;
             if(card[0] == 'A') cardValueInt = 14;
-            if (card[0] == 'K') cardValueInt = 13;
-            if (card[0] == 'Q') cardValueInt = 12;
-            if (card[0] == 'J') cardValueInt = 11;
-
-            cardValueInt = Int32.Parse(card[0].ToString());
+            else if (card[0] == 'K') cardValueInt = 13;
+            else if (card[0] == 'Q') cardValueInt = 12;
+            else if (card[0] == 'J') cardValueInt = 11;
+            else cardValueInt = Int32.Parse(card[0].ToString());
 
             if (cardValueInt > blackHighestCardInt)
-                blackHighestCard = card;
+                blackHighestCardInt = cardValueInt;
         }
         
-        string whiteHighestCard;
         string whiteHighestCardStr = whiteHand[0][0].ToString();
         int whiteHighestCardInt = 0;
         foreach (string card in whiteHand)
         {
             if(whiteHighestCardStr == "A") whiteHighestCardInt = 14;
-            if(whiteHighestCardStr == "K") whiteHighestCardInt = 13;
-            if(whiteHighestCardStr == "Q") whiteHighestCardInt = 12;
-            if(whiteHighestCardStr == "J") whiteHighestCardInt = 11;
-
-            whiteHighestCardInt = Int32.Parse(whiteHighestCardStr);
+            else if(whiteHighestCardStr == "K") whiteHighestCardInt = 13;
+            else if(whiteHighestCardStr == "Q") whiteHighestCardInt = 12;
+            else if(whiteHighestCardStr == "J") whiteHighestCardInt = 11;
+            else whiteHighestCardInt = Int32.Parse(whiteHighestCardStr);
             
             int cardValueInt = 0;
             if(card[0] == 'A') cardValueInt = 14;
-            if (card[0] == 'K') cardValueInt = 13;
-            if (card[0] == 'Q') cardValueInt = 12;
-            if (card[0] == 'J') cardValueInt = 11;
-
-            cardValueInt = Int32.Parse(card[0].ToString());
+            else if (card[0] == 'K') cardValueInt = 13;
+            else if (card[0] == 'Q') cardValueInt = 12;
+            else if (card[0] == 'J') cardValueInt = 11;
+            else cardValueInt = Int32.Parse(card[0].ToString());
 
             if (cardValueInt > whiteHighestCardInt)
-                whiteHighestCard = card;
+                whiteHighestCardInt = cardValueInt;
         }
         // compare the highest card
         if (blackHighestCardInt > whiteHighestCardInt)
