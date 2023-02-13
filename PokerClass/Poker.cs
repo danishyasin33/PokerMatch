@@ -1,13 +1,16 @@
-﻿namespace UtilityLibraries;
-
-public static class PokerClass
+﻿public static class PokerClass
 {
-    public static bool StartsWithUpper(this string? str)
+    public static bool ValidHand(string hand)
     {
-        if (string.IsNullOrWhiteSpace(str))
+        string[] splittedHand = hand.Split(" ");
+        
+        if (splittedHand.Length != 5)
             return false;
-
-        char ch = str[0];
-        return char.IsUpper(ch);
+        
+        return true;
+    }
+    public static string GetHandRank(string hand)
+    {
+        return "Ranking";
     }
 }
