@@ -9,3 +9,7 @@ This program allows you to input two poker hands through the console app `Match`
 ## how to run tests
 
 1. Execute `dotnet test PokerTest/PokerTest.csproj`.
+
+## Note
+
+The program has NOT been heavily tested and there may be logical flaws. It'll take more time to test all edge cases and test thoroughly. Time, which I sadly don't have.
