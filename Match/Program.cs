@@ -13,8 +13,9 @@ do
     // string? whiteInput = Console.ReadLine();
     // if (string.IsNullOrEmpty(whiteInput)) break;
 
-    string? blackInput = "2S 8S AS QS 3S";
-    string? whiteInput = "2H 4S 4C 3D 4H";
+    // string? blackInput = "2H 3D 5S 9C KD";
+    string? blackInput = "2S 8S AS QS 3S"; // flush
+    string? whiteInput = "2H 4S 4C 6D 3H";
 
     Console.WriteLine($"\n\nPlayer Black's input: {blackInput}");
     Console.WriteLine($"Player White's input: {whiteInput}");
